@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        To-Do List
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="form-container">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label>
+                        <label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Given Task</label>
+                        <input type="text" name="task" id="task">
+                    </div>
+                    <div>
+                        <label>Duration</label>
+                        <input type="text" name="duration" id="duration">
+                    </div>
+                    <div>
+                        <label>Submission Date</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Given Task</th>
+                            <th>Duration</th>
+                            <th>Submission Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
